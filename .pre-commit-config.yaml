@@ -1,0 +1,8 @@
+repos:
+- repo: https://github.com/returntocorp/semgrep
+  rev: 'v0.19.1'
+  hooks:
+    - id: semgrep
+      args: ['--config', 'https://semgrep.dev/p/r2c', '--error']
+
+
