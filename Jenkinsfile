@@ -16,7 +16,7 @@ pipeline {
       stage ('Semgrep') {
       steps {
         sh 'rm semgrep || true'
-        sh 'docker run --rm -v "$/root/Benchmark:/src" returntocorp/semgrep --config=https://semgrep.dev/p/nutmag.dvja-test --json
+        sh 'docker run --rm -v "$/root/Benchmark:/src" returntocorp/semgrep --config=https://semgrep.dev/p/nutmag.dvja-test
         sh 'cat semgrep'
       }
     }
